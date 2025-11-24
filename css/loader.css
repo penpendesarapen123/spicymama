@@ -1,0 +1,28 @@
+/* Loader Overlay */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+/* Loader Image */
+.loader-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Show the loader */
+.loader-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}

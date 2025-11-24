@@ -1,0 +1,75 @@
+@media print {
+    div { 
+        float: none !important;
+    }
+
+    /* Hide header and navbar */
+    header, .flex > aside, .wrapper span, hr {
+        display: none;
+    }
+
+    /* Adjust width of the main content */
+    main {
+        width: 100%;
+    }
+
+    .card-content i {
+        display: none;
+    }
+
+    body, html {
+        background-color: white;
+        padding: 10px;
+    }
+
+    /* Adjust font size for better readability */
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .card-header {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .card-content {
+        font-size: 14px;
+    }
+
+    .card-content th,
+    .card-content td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    /* Apply page-break properties */
+    .page-break {
+        break-before: page; /* Modern browsers */
+        page-break-before: always; /* Fallback for older browsers */
+        height: 0; /* Ensure no extra space */
+    }
+
+    .page-break-after {
+        break-after: page; /* Modern browsers */
+        page-break-before: always; /* Fallback for older browsers */
+        height: 0; /* Ensure no extra space */
+    }
+    
+
+    /* Prevent content splitting inside elements */
+    .card-content, .section-title {
+        page-break-inside: avoid;
+    }
+
+    /* Hide overflow to prevent extra scrolling when printing */
+    body {
+        overflow: hidden;
+    }
+    
+
+    /* Additional adjustments for printing */
+    /* Increase margins or font size as needed */
+}

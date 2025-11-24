@@ -1,0 +1,21 @@
+.ui-datepicker {
+    width: 260px; /* Reduced width for side-by-side fitting */
+    height: auto; /* Let height adjust based on content */
+    margin: 5px auto 0;
+    font: 12pt Arial, sans-serif;
+}
+
+.ui-datepicker-header {
+    background: #3399ff;
+    color: #ffffff;
+    font-family: 'Times New Roman';
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+    padding: 10px; /* Space for header */
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    padding: 5px; /* Extra padding around navigation buttons */
+    cursor: pointer;
+}
